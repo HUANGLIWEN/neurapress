@@ -136,6 +136,16 @@ docker run -p 3000:3000 [your-dockerhub-username]/neurapress:latest
 - Marked
 - shadcn/ui
 
+## SSL 错误处理
+
+添加.npmrc，并添加
+```
+registry=https://registry.npmmirror.com
+strict-ssl=false
+# 禁用 Node.js 的 SSL 证书验证
+NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
 ## 🌐 联系我们
 
  [Email](mailto:tianyaxiang@qq.com) | [Twitter](https://x.com/tianyaxiang)
